@@ -1,6 +1,6 @@
 <?php
 
-class ProductType {
+class Category {
     private $type;
     private $image;
     private $categoryIcon;

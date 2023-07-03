@@ -13,8 +13,8 @@ class Product {
         $this -> setName($name);
         $this -> setImage($image);
         $this -> setPrice($price);
-        $this -> setCategoryIcon($categoryIcon);
-        $this -> setType($type);
+
+
     }
 
     public function getName() {
@@ -44,13 +44,5 @@ class Product {
         $this -> price = $price;
     }
 
-    public function getCategoryIcon() {
-
-        return $this -> categoryicon;
-    }
-    public function setCategoryIcon($categoryicon) {
-
-        $this -> categoryicon = $categoryicon;
-    }
 
 }
