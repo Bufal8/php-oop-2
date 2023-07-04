@@ -1,11 +1,16 @@
 <?php
 
-class Product {
+require_once("./Category.php");
+
+class Product extends Category {
     private $name;
     private $price;
     private $image;
 
-    public function __construct($name, $image, $price) {
+    public function __construct($className, $categoryIcon, $name, $image, $price) {
+        
+        parent :: __construct($className, $categoryIcon);
+        
         $this -> setName($name);
         $this -> setImage($image);
         $this -> setPrice($price);
@@ -33,5 +38,6 @@ class Product {
     }
 }
 
-$ciotola = new Product ("Ciotola", 10);
+$ciotola = new Product ("Cane", "bau", "Ciotolator7000","immagine Ciotolator7000", 10);
+
 var_dump($ciotola);

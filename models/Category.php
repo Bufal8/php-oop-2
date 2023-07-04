@@ -26,9 +26,3 @@ class Category {
 
 $cane = new Category("Cane", "bau");
 $gatto = new Category("Gatto", "miao");
-
-var_dump($cane);
-
-echo "<br>-------------------</br>";
-
-var_dump($gatto);
