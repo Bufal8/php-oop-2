@@ -2,13 +2,11 @@
 
 class Type {
     private $type;
+    
 
-    private $categoryIcon;
-
-    public function __construct($type, $categoryIcon) {
+    public function __construct($type) {
         $this -> setType($type);
 
-        $this -> setCategoryIcon($categoryIcon);
     }
 
     public function getType() {
@@ -18,10 +16,24 @@ class Type {
         $this -> type = $type;
     }
 
-    public function getCategoryIcon() {
-        return $this -> categoryIcon;
-    }
-    public function setCategoryIcon($categoryIcon) {
-        $this -> categoryIcon = $categoryIcon;
-    }
+   
 }
+
+$ciotola = new Type ("Ciotola");
+$cibo = new Type ("Cibo");
+$cuccia = new Type ("Cuccia");
+$giocattolo = new Type ("Giocattolo");
+
+var_dump($ciotola);
+
+echo "<br>-------------------</br>";
+
+var_dump($cibo);
+
+echo "<br>-------------------</br>";
+
+var_dump($cuccia);
+
+echo "<br>-------------------</br>";
+
+var_dump($giocattolo);
