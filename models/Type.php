@@ -2,12 +2,12 @@
 
 class Type {
     private $type;
-    private $image;
+
     private $categoryIcon;
 
-    public function __construct($type, $image, $categoryIcon) {
+    public function __construct($type, $categoryIcon) {
         $this -> setType($type);
-        $this -> setImage($image);
+
         $this -> setCategoryIcon($categoryIcon);
     }
 
@@ -16,13 +16,6 @@ class Type {
     }
     public function setType($type) {
         $this -> type = $type;
-    }
-
-    public function getImage() {
-        return $this -> image;
-    }
-    public function setImage($image) {
-        $this -> image = $image;
     }
 
     public function getCategoryIcon() {
